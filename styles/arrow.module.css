@@ -1,0 +1,36 @@
+.arrow_group{
+    width: 100%;
+    overflow: hidden;
+    font-size:1rem ;
+    color: #000000;
+   
+}
+.arrow{
+   
+width:100%;
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1000ms ease-in-out, opcaity 1000ms ease-in-out;
+}
+.arrow_group:hover .arrow{
+    animation: arrow 2000ms ease-in-out infinite;
+}
+@keyframes arrow{
+    0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100%);
+      }
+      50.005% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+}
+@media (min-width: 400px) and (max-width: 1200px) {
+  .arrow_group{
+    font-size: 0.8rem;
+  }
+}

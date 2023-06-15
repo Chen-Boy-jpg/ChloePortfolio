@@ -1,0 +1,267 @@
+.exp_section {
+  width: 50%;
+  display: flex;
+  margin-left: 41.8%;
+  gap: 7.8rem;
+  flex-wrap: wrap;
+}
+.exp {
+  margin-top: 8.4rem;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.exp_title {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  color: #5849ff;
+}
+.exp_group {
+  width: 83.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.exp_child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: "Noto Sans TC";
+}
+.exp_date {
+  width: 50%;
+  font-family: "Noto Sans TC";
+  font-weight: 800;
+}
+.exp_company {
+  width: 50%;
+  font-family: "Noto Sans TC";
+}
+.exp_position {
+  width: 30%;
+  font-family: "Noto Sans TC";
+}
+.work {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work_title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+
+  width: 10%;
+  color: #5849ff;
+}
+.work_detail_group {
+  width: 83.5%;
+}
+.work_detail {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  line-height: 219.2%;
+}
+.awards {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.awards_title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  color: #5849ff;
+}
+.award_group {
+  width: 83.5%;
+}
+.award_child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.award_type {
+  width: 65%;
+  font-family: "Noto Sans TC";
+  line-height: 219.2%;
+}
+.award_item {
+  width: 20%;
+  font-family: "Noto Sans TC";
+  line-height: 219.2%;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.skills_title {
+  font-size: 1.25rem;
+
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  color: #5849ff;
+}
+.tag_group {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.tag {
+  /* width: 18%; */
+  padding: 1rem 1.5rem;
+
+  height: 2.5rem;
+  font-size: 1.25rem;
+  border: 1px solid #000000;
+  border-radius: 31.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 400px) and (max-width: 1200px) {
+    .tag_group{width: 80%;}
+  .tag {
+    /* width: 18%; */
+    padding: 0.5rem 1.5rem;
+    /* width: 6rem; */
+    height: 1.8rem;
+    font-size: 0.8rem;
+  }
+  .work_title {
+    margin-top: 0rem;
+  }
+  .awards_title {
+    margin-top: 0rem;
+  }
+  .exp_child {
+    font-size: 0.6rem;
+    gap: 0rem;
+  }
+  .work_detail {
+    font-size: 0.6rem;
+  }
+  .award_child {
+    font-size: 0.6rem;
+  }
+  .exp_date {
+    width: 60%;
+  }
+  .exp_company {
+    width: 55%;
+  }
+  .exp_position {
+    width: 30%;
+  }
+  .award_type {
+    width: 70%;
+  }
+  .award_item{
+    width: 25%;
+  }
+}
+@media (max-width: 400px) {
+  .exp {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  .exp_title {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  .exp_section {
+    margin: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .exp_title {
+    justify-content: flex-start;
+  }
+  .exp_group {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .exp_child {
+    gap: 0;
+  }
+  .exp_date {
+    width: 60%;
+  }
+  .exp_company {
+    width: 60%;
+  }
+
+  .work {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  .work_title {
+    font-size: 1.25rem;
+
+    justify-content: flex-start;
+  }
+  .work_detail_group {
+    width: 100%;
+  }
+  .work_detail {
+    font-size: 0.5rem;
+  }
+  .awards {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  .awards_title {
+    font-size: 1.25rem;
+    justify-content: flex-start;
+  }
+  .award_group {
+    width: 100%;
+  }
+  .award_child {
+    font-size: 0.6rem;
+  }
+  .award_type {
+    width: 69%;
+  }
+  .award_item {
+    width: 30%;
+  }
+  .skills {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  .skills_title {
+    font-size: 1.25rem;
+    justify-content: flex-start;
+  }
+  .tag_group {
+    width: 100%;
+  }
+  .tag {
+    /* width: 18%; */
+    padding: 0.3rem 1rem;
+    /* width: 6rem; */
+    height: 1.5rem;
+    font-size: 0.6rem;
+  }
+}

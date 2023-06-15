@@ -1,0 +1,42 @@
+.contact{
+    width: 90%;
+    margin: 6rem auto;
+    margin-top: 6rem ;
+    display: flex;
+    align-items: center;
+   gap: 1rem;
+}
+.contact_title{
+    width: 50%;
+    font-size: 8rem;
+    color: #5849FF;
+}
+.contact_info div{
+    font-family: 'Noto Sans TC';
+font-weight: 500;
+font-size: 1rem;
+line-height: 219.2%;
+}
+
+@media (min-width: 400px) and (max-width: 1200px) {
+    .contact_title{
+        width: 60%;
+        font-size: 5.5rem;
+    }
+    
+}
+@media (max-width: 400px) {
+    .contact{
+        margin: 4rem auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .contact_title{
+        font-size: 4rem;
+    }
+    .contact_info div{
+        font-size: 0.8rem;
+    }
+}
+

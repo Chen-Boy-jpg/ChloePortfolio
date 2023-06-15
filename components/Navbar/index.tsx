@@ -12,10 +12,18 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const targetSection = document.getElementById("target-section");
+      const targetAboutSection = document.getElementById(
+        "target-section-about"
+      );
       if (targetSection) {
         const { top, bottom } = targetSection.getBoundingClientRect();
         const isIntersecting = top <= 0 && bottom >= 0;
         setIsScrolled(isIntersecting);
+      }
+      if (targetAboutSection) {
+        const { top, bottom } = targetAboutSection.getBoundingClientRect();
+        const isIntersecting = top <= 0 && bottom >= 0;
+        setIsScrolled(!isIntersecting);
       }
     };
 
@@ -57,14 +65,15 @@ const Navbar = () => {
           <input type="checkbox" name="" id="" />
           <aside className={style.sidebar}>
             <nav>
-              <a href="">
-                <div>Home</div>
+              <a href={"/"}>
+                <li>Home </li>
               </a>
-              <a href="">
-                <div>Works</div>
+              <a href={WORK}>
+                <li>Work</li>
               </a>
-              <a href="">
-                <div>About</div>
+
+              <a href={"/about"}>
+                <li>About</li>
               </a>
             </nav>
           </aside>

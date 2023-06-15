@@ -328,7 +328,7 @@
   width: 18rem;
 }
 .work_detail {
-  width: 24.375rem;
+  width: 100%;
   height: 3rem;
   font-size: 1rem;
   font-weight: 400;
@@ -663,8 +663,11 @@
     display: flex;
     justify-content: flex-end;
   }
-  .arrow_group {
+  .about_content_arrow a{
     width: 50%;
+  }
+  .arrow_group {
+    
   }
   .about_info{width: 100%;}
   .about_heading_title {

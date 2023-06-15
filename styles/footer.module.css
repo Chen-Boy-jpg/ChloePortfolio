@@ -19,6 +19,7 @@
   color: #ffffff;
 }
 .marquee_text {
+ 
   /* margin-right:3rem ; */
   font-size: 3rem;
   line-height: 146.91%;
@@ -31,7 +32,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(90%);
   }
 }
 .copyright{

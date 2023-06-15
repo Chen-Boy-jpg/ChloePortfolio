@@ -16,10 +16,12 @@ const about = () => {
     AOS.init(aosConfig);
   }, []);
   return (
-    <div className="container target-section" id="container">
-      <AboutIntro />
-      <AboutExp />
-      <AboutContact />
+    <div className="container" id="container">
+      <div id="target-section-about">
+        <AboutIntro />
+        <AboutExp />
+        <AboutContact />
+      </div>
     </div>
   );
 };
